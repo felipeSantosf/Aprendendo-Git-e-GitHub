@@ -39,3 +39,8 @@ git status
 
 git add nomeArquivo.txt ou git add * 
 
+
+# Criando o commit (Imagem ou snapshot do estado do arquivo atual)
+
+git commit -m "Adicionando arquivos"
+
