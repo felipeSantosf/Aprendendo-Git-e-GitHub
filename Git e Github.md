@@ -94,3 +94,8 @@ git commit -am "nome do commit"
 # Reseta o arquivo a versão anterior antes da modificação
 
 git checkout "nomeArquivo"
+
+
+# Se adicionar o arquivo com alteração errada para o staged (git add arquivo) e quiser voltar utilizar o comando
+
+git reset HEAD "nomeArquivo"
