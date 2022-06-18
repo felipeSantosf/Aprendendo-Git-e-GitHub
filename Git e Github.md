@@ -131,3 +131,27 @@ git reset --mixed 345343y5435jm5435b435b34n435k435(nome da hash)
 git reset --hard 345343y5435jm5435b435b34n435k435(nome da hash) 
 
 ** Tem que ser o nome da hash que você quer que a versão esteja, não pode ser a útima, senão, não terá alteração no commit
+
+
+
+# Após a criação do repositório remoto, para conectar o repositório local ao remoto 
+## origin é o nome usado para determinar a origem do repositório remoto (pode ser qualquer nome, o mais utilizado é o origin)... é como se fosse um apelido para o link do repositório remoto
+git remote add origin https://github.com/felipeSantosf/Aprendendo-Git-e-GitHub.git (Substituir pelo link do repositório)
+
+
+# Renomear o nome da sua branch local para main (Nesse caso é o nome da branch do repositório remoto)
+
+git branch -M main
+
+# Realizar o envio da branch para o repositório remoto
+
+git push -u origin main
+
+# Verificar se existe algum repositório remoto conectado
+
+git remote
+
+
+# Verificar se existe algum repositório remoto conectado com mais informações
+
+git remote -v
