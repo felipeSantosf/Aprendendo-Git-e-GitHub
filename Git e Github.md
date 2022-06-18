@@ -44,3 +44,48 @@ git add nomeArquivo.txt ou git add *
 
 git commit -m "Adicionando arquivos"
 
+
+# Mostra informações sobre os commits realizados
+
+git log
+
+
+# Mostra informações sobre os commits realizados e se mudaram de branch 
+
+
+git log -- decorate
+
+
+# Mostra informações sobre os commits realizados pelo autor
+
+git log --author="NomeAutor"
+
+
+# Mostra informações sobre os commits realizados pelo autor em ordem alfabética
+
+
+git shortlog
+
+# Mostra informações sobre os commits realizados de forma gráfica
+
+git log --graph
+
+
+# mostra o que foi alterado na hash 
+
+git show 46897j546546k6546op546546p456465k6456
+
+
+# verificando as mudanças do repositório antes de enviar
+
+git diff
+
+
+# mostrar o nome apenas do arquivo que foi modificado antes de enviar
+
+git diff --name-only
+
+
+# salva o arquivo e já comitta
+
+git commit -am "nome do commit"
