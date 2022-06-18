@@ -89,3 +89,8 @@ git diff --name-only
 # salva o arquivo e já comitta
 
 git commit -am "nome do commit"
+
+
+# Reseta o arquivo a versão anterior antes da modificação
+
+git checkout "nomeArquivo"
