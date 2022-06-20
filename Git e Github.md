@@ -155,3 +155,8 @@ git remote
 # Verificar se existe algum repositório remoto conectado com mais informações
 
 git remote -v
+
+
+##### Tentei realizar o git push mas deu erro que dizia que meu repositório local estava desatualizado em relação ao repo remoto, usei os seguintes comandos e deu certo
+git pull origin master --allow-unrelated-histories
+git push origin master
