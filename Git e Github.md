@@ -200,22 +200,23 @@ git branch -D nomeDaBranch
 ## Fazendo o Merge:  Cria um novo commit com juntando os commits anteriores (forma diamante)
  * Prós:
         - Operação não destrutiva (Não exclui os commits anteriores)
- * Contra: 
+ * Contras: 
         - Commit extra
         - Histórico poluído
 
 gir merge nomeDaBranch
 
 ## Utilizando o Rebase: Pega o commit que estava separado e coloca a frente
- * Prós:S
+ * Prós:
         - Evita commits extras
         - Histórico linear
  * Contra: 
         - Perde a ordem cronológica
-       S
+       
 git rebase nomeDaBranch
 
 # É melhor utilizar o rebase sempre que puder
 
 
-
+# Para ignorar o arquivo no git deve ser criado o .gitignore e adicionar o nome do arquivo.extensao que deseja não rastrear ou a .extensão se for vários arquivos
+## Exemplo: Dentro do .gitignore -> Login.txt ou .txt para qualquer documento de textos
