@@ -157,6 +157,65 @@ git remote
 git remote -v
 
 
-##### Tentei realizar o git push mas deu erro que dizia que meu repositório local estava desatualizado em relação ao repo remoto, usei os seguintes comandos e deu certo
+# Tentei realizar o git push mas deu erro que dizia que meu repositório local estava desatualizado em relação ao repo remoto, usei os seguintes comandos e deu certo
 git pull origin master --allow-unrelated-histories
 git push origin master
+
+
+# Para clonar o repositório
+
+git clone  https://github.com/felipeSantosf/Aprendendo-Git-e-GitHub
+
+
+
+# Para fazer uma cópia de um projeto que não é seu, realizar as modificações e enviar para o usuário posteriormente
+
+Deve-se clilcar em Fork no github onde está o projeto e este projeto será forkado para o seu github
+
+
+# O que é uma Branch... É um ponteiro móvel que leva a um commit
+* Vantagens:
+    - Poder modificar sem alterar o local principal(master ou no caso main que estou utilizando)
+    - Facilmente "desligável"
+    - Múltiplas pessoas trabalhando
+    - Evita conflitos
+
+# Verificar as branch's criadas
+
+git branch
+
+# Para criar e entrar em um branch
+
+git checkout -b nomeDaBranch
+
+# Para selecionar a branch
+
+git checkout nomeDaBranch
+
+# Para apagar um branch
+
+git branch -D nomeDaBranch
+
+# Para unir branches
+## Fazendo o Merge:  Cria um novo commit com juntando os commits anteriores (forma diamante)
+ * Prós:
+        - Operação não destrutiva (Não exclui os commits anteriores)
+ * Contra: 
+        - Commit extra
+        - Histórico poluído
+
+gir merge nomeDaBranch
+
+## Utilizando o Rebase: Pega o commit que estava separado e coloca a frente
+ * Prós:S
+        - Evita commits extras
+        - Histórico linear
+ * Contra: 
+        - Perde a ordem cronológica
+       S
+git rebase nomeDaBranch
+
+# É melhor utilizar o rebase sempre que puder
+
+
+
