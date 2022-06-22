@@ -219,4 +219,12 @@ git rebase nomeDaBranch
 
 
 # Para ignorar o arquivo no git deve ser criado o .gitignore e adicionar o nome do arquivo.extensao que deseja não rastrear ou a .extensão se for vários arquivos
-## Exemplo: Dentro do .gitignore -> Login.txt ou .txt para qualquer documento de textos
+Exemplo: Dentro do .gitignore -> Login.txt ou .txt para qualquer documento de textos
+
+
+
+# Fiz a modificação em um arquivo e preciso guardar em um cantinho para realizar algum trabalho em outra branch
+
+git stash para salvar a alteração
+
+git stash apply para aplicar as mudanças que eu guardei
