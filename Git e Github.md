@@ -192,9 +192,13 @@ git checkout -b nomeDaBranch
 
 git checkout nomeDaBranch
 
-# Para apagar um branch
+# Para apagar um branch repositorio local
 
 git branch -D nomeDaBranch
+
+# Para apagar um branch repositorio remoto
+
+git push origin :nomeDaBranch
 
 # Para unir branches
 ## Fazendo o Merge:  Cria um novo commit com juntando os commits anteriores (forma diamante)
@@ -228,3 +232,40 @@ Exemplo: Dentro do .gitignore -> Login.txt ou .txt para qualquer documento de te
 git stash para salvar a alteração
 
 git stash apply para aplicar as mudanças que eu guardei
+
+# Para mostrar a lista de todos os stashs que eu estiver fazendo
+
+git stash list
+
+# Limpar todos os stashs
+
+git stash clear
+
+# criar alias para comandos no git
+
+git config --global alias.s status
+
+
+# Criar uma tag (release)
+git tag -a 1.0.0(número versão) -m "Adicionando novo documento de texto"
+git tag -a 1.0.0 -m "Add informações sobre tag"
+
+# Verificar as tags existentes 
+git tag
+
+# Subir as tags
+git push origin main --tags
+
+# Apagar tags no repositório local
+
+git tag -d 1.0.0
+
+# Apagar tags no repositório remoto
+
+git push origin :1.0.0
+
+# Salvando a sexta (ele reverte mas não exclui o commit que eu fiz merda, desta forma eu não perco as alterações que fiz)
+git show codigoCommitQueFizMerda
+git revert codigoCommitQueFizMerda
+
+
